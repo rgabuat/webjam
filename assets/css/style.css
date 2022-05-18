@@ -156,6 +156,36 @@ span.title {
     object-fit: contain !important;
 }
 
+/* .marquee {
+    background: blue;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+} */
+
+.skewed {
+    display: inline-block;
+    font: 2em/1 impact, sans-serif;
+    margin-top: 5em;
+    position: relative;
+    -webkit-transform: rotate(-5deg) skew(-5deg, 0);
+       -moz-transform: rotate(-5deg) skew(-5deg, 0);
+        -ms-transform: rotate(-5deg) skew(-5deg, 0);
+         -o-transform: rotate(-5deg) skew(-5deg, 0);
+            transform: rotate(-5deg) skew(-5deg, 0);
+}
+
+
+.skewed span {
+    
+    color: #ffe;
+    padding: 1em;
+    position: relative;
+    text-shadow: 1px 2px 0 #666,
+                 2px 3px 0 #888;
+    text-transform: uppercase;
+}
+
 /*--- Bootstrap Mobile Gutter Fix --*/
 .row, .container-fluid {
     margin-left: 0px!important;

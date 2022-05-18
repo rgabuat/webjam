@@ -281,9 +281,9 @@
                 </div>
     </section>
 
-    <section class="bg-primary">
-        <div class="container-fluid">
-            <span class="display-2 text-white">MOVING TEXT</span>
+    <section class="skewed w-100">
+        <div class="container-fluid ">
+            <span class="display-2 text-primary"> <p class="marquee" style="text-align:right;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p> </span>
         </div>
     </section>
         
@@ -433,8 +433,31 @@
             el.appendChild(cloneChild.children[0])
             next = next.nextElementSibling
         }
-    })
+    });
+
+    const marquees = [...document.querySelectorAll('.marquee')];
+    marquees.forEach((marquee) => {
+        marquee.innerHTML = marquee.innerHTML + '&nbsp;'.repeat(1);
+    marquee.i = 0;
+    marquee.step = 3;
+        marquee.width = (marquee.clientWidth + 1);
+    marquee.style.position = '';
+    marquee.innerHTML = `${marquee.innerHTML}&nbsp;`.repeat(1);
+    marquee.addEventListener('mouseenter', () => marquee.step = 0, false);
+    marquee.addEventListener('mouseleave', () => marquee.step = 3, false);
+    });
+
+    setInterval(move, 50);
+
+    function move() {
+    marquees
+    .forEach((marquee) => {
+    marquee.style.marginLeft = `-${marquee.i}px`;;
+    marquee.i = marquee.i < marquee.width ? marquee.i + marquee.step : 1;
+    }); 
+    }
 
 </script>
+
 </body>
 </html>
