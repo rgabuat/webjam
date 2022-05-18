@@ -22,6 +22,12 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    background: #0a0a0a;
+    background-position: fixed;
+    background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url(https://media0.giphy.com/media/2shBNJSPTrpWvoXfpD/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
 article,aside,details,figcaption,figure,
@@ -96,7 +102,11 @@ input, select {
 
 
 /* header section */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+   }
 .navbar
 {
     background-color: transparent !important;
@@ -129,6 +139,70 @@ input, select {
     font-weight: 800;
 }
 
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+    }
+
+    /*--- Fixed Video Background iOS/Mobile Style--*/
+    .video-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    #video {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    z-index: -1000;
+    }
+    video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    }
+
+    .video-background
+    {
+        position:relative;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0,.60);
+        background-position:fixed;
+    }
+
+    #article-poly
+    {
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0% 100%);
+    }
+
+    #contact-poly
+    {
+        /* -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); */
+        clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+    }
 
 /* custom color */
 
