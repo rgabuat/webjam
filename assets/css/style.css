@@ -157,9 +157,16 @@ input, select {
 }
 
 
-span.title {
-    writing-mode: vertical-rl; 
-  }
+
+
+
+
+    span.title {
+        writing-mode: vertical-rl;
+        font-weight: 900;
+      }
+@media (min-width: 991px) {
+}
 
 .card .card-img-top
 {
@@ -178,6 +185,7 @@ span.title {
 .card
 {
   transition: 250ms all ease-in-out;
+  box-shadow: none ;
 }
 
 .card-article {
