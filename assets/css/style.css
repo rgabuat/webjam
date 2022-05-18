@@ -1,3 +1,13 @@
+:root {
+    --clr-gray-light: #d7dfe2;
+    --clr-gray-med: #616b74;
+    --clr-gray-dark: #414b56;
+    --clr-link: #4d97b2;
+    --clr-popular: #ef257a;
+    --clr-technology: #651fff;
+    --clr-psychology: #e85808;
+  }
+
 /* reset */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -143,6 +153,7 @@ input, select {
 .carousel-item > .col-md-3 > .card
 {
     margin:0 30px 0 30px;
+    box-shadow:none !important  ;
 }
 
 
@@ -163,10 +174,131 @@ span.title {
     position: absolute;
 } */
 
+/* articles */
+.card
+{
+  transition: 250ms all ease-in-out;
+}
+
+.card-article {
+    overflow: hidden;
+    background: white;
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px var(--clr-gray-light);
+  }
+
+ 
+  .banner-img {
+    position: absolute;
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;
+  }
+  
+  .category-tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    background: red;
+    padding: 0.5rem 1.3rem 0.5rem 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  .popular {
+    background: var(--clr-popular);
+  }
+  
+  .technology {
+    background: var(--clr-technology);
+  }
+  
+  .psychology {
+    background: var(--clr-psychology);
+  }
+  
+  .card-body-article {
+    margin: 15rem 1rem 1rem 1rem;
+  }
+  
+  .blog-hashtag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--clr-link);
+  }
+  
+  .blog-title {
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .blog-description {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+  }
+  
+  .card-profile {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card-profile-info {
+    margin-left: 1rem;
+  }
+  
+  .profile-name {
+    font-size: 1rem;
+  }
+  
+  .profile-followers {
+    color: var(--clr-gray-med);
+    font-size: 0.9rem;
+  }
+
+
+/* custom button */
+.text-green
+{
+    color:#036A43;
+}
+
+.text-yellow
+{
+    color:#FFCA27;
+}
+
+.bg-green
+{
+    background:#036A43;
+}
+
+.bg-yellow
+{
+    background:#FFCA27;
+}
+ 
 .skewed {
     display: inline-block;
     font: 2em/1 impact, sans-serif;
-    margin-top: 5em;
     position: relative;
     -webkit-transform: rotate(-5deg) skew(-5deg, 0);
        -moz-transform: rotate(-5deg) skew(-5deg, 0);
@@ -185,6 +317,48 @@ span.title {
                  2px 3px 0 #888;
     text-transform: uppercase;
 }
+
+/* #article-poly
+    {
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 0% 100%,70% 100%,0% 100%,0% 1000%);
+        position: relative;
+    } */
+
+    #article-poly{
+        width: 100%;
+        position: relative;
+      }
+
+    #article-poly::after
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: #036A43;
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0% 100%);
+    }
+
+
+    .inner {
+        position: relative;
+        top: 40px;
+        margin: 0 auto;
+        align-items: center; 
+        justify-content: center;
+      }
+
+    #contact-poly
+    {
+        /* -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); */
+        clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+    }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
 .row, .container-fluid {
@@ -239,17 +413,7 @@ span.title {
         background-position:fixed;
     }
 
-    #article-poly
-    {
-        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
-        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0% 100%);
-    }
-
-    #contact-poly
-    {
-        /* -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%); */
-        clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
-    }
+    
 
 /* custom color */
 
