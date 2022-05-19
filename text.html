@@ -5,9 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/landing.css">
+     <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+     <!-- MDB -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Quicksand', sans-serif;
+   }
+body{
+    background: #fff;
+}
+.container{
+    position: relative;
+    
+}
+.container .section{
+    position: relative;
+    width: 100%;  height: 100vh;
+   
+}
+.container .section:nth-of-type(2){
+    background: url(https://media.istockphoto.com/photos/pakistan-monument-islamabad-picture-id535695503?k=6&m=535695503&s=612x612&w=0&h=uP8aDK4xlfjk3kEiyr9wwUiuh80UwAiICweFpiBDosk=);
+    background-size: 100% 100vh;
+}
+.container .section:nth-of-type(3){
+    background: url(https://www.wallpapertip.com/wmimgs/67-673764_pakistan-1799463-faisal-mosque.jpg);
+    background-size: 100% 100vh;
+}
+.container .section:nth-of-type(4){
+    background: url(http://upload.wikimedia.org/wikipedia/commons/e/e8/Ashburton_river_near_Nanutarra_roudhouse_24-4-2004_-_panoramio.jpg);
+    background-size: 100% 100vh;
+}
+.container .section:nth-of-type(5){
+    background: url(https://pbs.twimg.com/media/DkxmzfwW0AEJNdN.jpg);
+    background-size: 100% 100vh;
+}
+
+/***********  .nav   ************/
+.nav{
+    /* position: fixed; */
+    top: 0;   left: 0;
+    height: 80px;   width: 100%;  
+    z-index: 5;
+    /* background: rgba(0,0,0,.5); */
+    box-sizing: border-box;
+    padding: 0 110px;
+    transition: .9s;
+}
+.nav.active{
+    height: 60px;   
+    padding: 0 120px;
+    background: #262626;
+}
+
+/************** .nav img h1 *******************/
+.nav img{
+    position: relative;
+    width: 80px;  height: 80px;
+    background: transparent;  
+    float: left;
+    transition: .9s;
+}
+.nav.active img{
+    width: 60px;  height: 60px;
+}
+
+/************** .nav .menu  *******************/
+.nav.active ul.menu a{
+    top: 0;
+}
+.nav .menu {
+    list-style: none;
+    float: left;
+}
+.nav ul.menu li a{
+    position: relative;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;  text-transform: uppercase;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.nav ul.menu li:hover a,.nav ul.menu li a.active{
+    background: #FFCA27;
+}
+.nav.active .menu a{
+    padding: 0 25px; 
+    height: 60px;
+    line-height: 60px;
+}
+
+/*********** Media Queries******************/
+@media screen and (max-width: 934px) { 
+    .container .nav,.container .nav.active{
+        height: auto;   
+        padding: 10px 30px;
+    }
+}
+
+</style>
 </head>
 <body>
-    <h1 data-title="Online Tutorials">Online Tutorials</h1>
+    <div class="container">
+        <nav class="nav navbar shadow-none navbar-expand-lg fixed-top">
+            <div class="container">
+              <a class="navbar-brand me-2" href="/">
+                <img src="assets/images/teknologo.png" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
+                </a>
+              <button class="navbar-toggler"  type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+
+              <div class=" collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <ul class="menu navbar-nav">
+                      <li><a class="active" aria-current="page" href="#">Home</a></li>
+                      <li><a class="" aria-current="page" href="#">About us</a></li>
+                      <li><a class="" aria-current="page" href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav id="navbar" class="nav navbar navbar-expand-lg navbar-light bg-light fixed-top pt-5">
+            <div class="container">
+            <a class="navbar-brand me-2" href="#">
+                <img src="assets/images/teknologo.png" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light menu">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./contact-us.html">Contact Us</a>
+                    </li>
+            </div>
+        </nav> -->
+        <div class="section"></div>
+           <div class="section"></div>
+           <div class="section"></div>
+           <div class="section"></div>
+    </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+<script>
+     $(document).ready(function(){
+                     $(window).scroll(function(){
+                           $val = $(window).scrollTop();
+                           if($val > 10){
+                                 $('.container .nav').addClass('active');
+                           }else{
+                              $('.container .nav').removeClass('active');  
+                           }
+                     })
+
+                     $('.container .nav h1').click(function(){
+                       $('.container .nav ul.menu').toggleClass('display');
+                     })
+                })
+</script>
 </body>
 </html>

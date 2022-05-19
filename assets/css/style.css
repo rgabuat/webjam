@@ -113,14 +113,17 @@ input, select {
 
 
 /* header section */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Calistoga', cursive; */
+    font-family: 'Kumar One', cursive;
    }
+   
 .navbar
 {
-    background-color: transparent !important;
     box-shadow: none !important;
 }
 
