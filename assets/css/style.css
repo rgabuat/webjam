@@ -113,10 +113,11 @@ input, select {
 
 
 /* header section */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calistoga', cursive;
    }
 .navbar
 {
