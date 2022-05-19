@@ -119,9 +119,9 @@ input, select {
 * {
     font-family: 'Calistoga', cursive;
    }
+   
 .navbar
 {
-    background-color: transparent !important;
     box-shadow: none !important;
 }
 

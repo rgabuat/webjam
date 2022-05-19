@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="assets/images/teknologo.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <title> FEU TechnoFest | WebJam </title>
 </head>
 
@@ -19,48 +20,26 @@
     <section class="showcases">
         <header>
             <!-- Navbar -->
-                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top pt-5">
-                    <!-- Container wrapper -->
-                    <div class="container">
-                    <!-- Navbar brand -->
-                    <a class="navbar-brand me-2" href="#">
-                        <img
-                        src="assets/images/teknologo.png"
-                        height="120"
-                        alt="TechnoFest"
-                        loading="lazy"
-                        style="margin-top: -1px;"
-                        />
+            <nav class="nav navbar shadow-none navbar-expand-lg fixed-top">
+                <div class="container">
+                  <a class="navbar-brand me-2" href="/">
+                    <img src="assets/images/teknologo.png" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
                     </a>
-                
-                    <!-- Toggle button -->
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarButtonsExample"
-                        aria-controls="navbarButtonsExample"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <i class="fas fa-bars"></i>
-                    </button>
-                
-                    <!-- Collapsible wrapper -->
-                    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                        <!-- Left links -->
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light">
-                            <li class="nav-item">
-                              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-light" href="./about-us.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="./contact-us.html">Contact Us</a>
-                            </li>
+                  <button class="navbar-toggler text-white"  type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+    
+                  <div class=" collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <ul class="menu navbar-nav">
+                          <li><a class="active" aria-current="page" href="#">Home</a></li>
+                          <li><a class="" aria-current="page" href="#">About us</a></li>
+                          <li><a class="" aria-current="page" href="#">Contact Us</a></li>
+                      </ul>
                     </div>
-                    <!-- Collapsible wrapper -->
+                  </div>
+                </div>
+              </nav>
         </header>
 
             <div class="video-background">
@@ -433,50 +412,77 @@
                 </div>
                 <div class="col-lg-10 d-flex">
                     <div class="cards  col-lg-8 d-lg-flex d-md-block justify-evenly-between m-auto">
-                        <div class="card shadow-sm mx-3">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                              <img src="assets/images/rollen.png" class="img-fluid"/>
-                              <a href="#!">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                              </a>
+                        <div class="cards-container">
+  
+                           <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="card x-card card-one my-3">
+                                    <header class="bg-yellow">
+                                      <div class="avatar">
+                                        <img src="assets/images/rollen.png" alt="Jhon Doe" />
+                                      </div>
+                                    </header>
+                                
+                                    <h3>Rollen John Carl M. Gabuat</h3>
+                                    <div class="desc">
+                                        Good things will come to those who wait.<br> #RockerXDeveloper
+                                    </div>
+
+                                    <div class="col-12 text-center mb-5">
+                                        <a href="./about-us.html" class="btn btn-primary">About Rollen </a>
+                                    </div>
+
+                                    <footer class="bg-green">
+                                      <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </footer>
+                                  </div>
                             </div>
-                            <!-- card-1 -->
-                            <div class="card-body">
-                              <h5 class="card-title">Rollen John Carl M. Gabuat</h5>
-                              <p class="card-text">Good things will come to those who wait. #RockerXDeveloper</p>
-                              <a href="./about-us.html" class="btn btn-primary">About Rollen </a>
+
+                            <!-- jannel -->
+                            <div class="col-md-6 ">
+                                <div class="card x-card card-one my-3">
+                                    <header class="bg-yellow">
+                                      <div class="avatar">
+                                        <img src="assets/images/jannel.jpg" alt="Jhon Doe" />
+                                      </div>
+                                    </header>
+                                
+                                    <h3>Jannel C. Lacbain</h3>
+                                    <div class="desc">
+                                        Forget the oracle. You don't like your destiny? Write a new one! #BookwormXDeveloper
+                                    </div>
+
+                                    <div class="col-12 text-center mb-5">
+                                        <a href="./about-us.html" class="btn btn-primary">About Jannel </a>
+                                    </div>
+                                
+                                    <footer class="bg-green">
+                                      <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </footer>
+                                  </div>
                             </div>
-                          </div>
-                        <!-- card-2 -->
-                          <div class="card shadow-sm mx-3">
-                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                              <img src="assets/images/jannel.jpg" class="img-fluid"/>
-                              <a href="#!">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                              </a>
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">Jannel C. Lacbain</h5>
-                              <p class="card-text">Forget the oracle. You don't like your destiny? Write a new one! #BookwormXDeveloper</p>
-                              <a href="./about-us.html" class="btn btn-primary">About Jannel</a>
-                            </div>
+                            
+                           </div>
+                          
+                            <div class="clear"></div>
                           </div>
                     </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <p class="display-2 text-center text-yellow" style="padding:80px 0px;"><span>DEV2</span></p>
-                </div>
-                <div class="col-lg-2">
-                    <p class="display-2 text-center text-yellow" style="padding:80px 0px;"><span class="title">CONTACT US</span></p>
-                </div>
-                <div class="col-lg-5">
-                    <p class="display-2 text-center text-yellow" style="padding:80px 0px;"><span>DEV 1</span></p>
+                <div class="col-lg-12">
+                    <p class="display-2 text-center text-yellow" style="padding:80px 0px;"><span class="">CONTACT US</span></p>
+                    <p class="display-2 text-center text-yellow" style="padding:80px 0px;"><span class="">WE'D LOVE TO HEAR FROM YOU</span></p>
                 </div>
             </div>
         </div>
@@ -553,7 +559,25 @@
       </footer>
 
 <!-- MDB -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+<script src="assets/js/smoothscroll.js"></script>
+<script>
+    $(document).ready(function(){
+         $(window).scroll(function(){
+               $val = $(window).scrollTop();
+               if($val > 10){
+                     $('.nav').addClass('active');
+               }else{
+                  $('.nav').removeClass('active');  
+               }
+            });
+
+         $('.container .nav h1').click(function(){
+           $('.container .nav ul.menu').toggleClass('display');
+         })
+    })
+</script>
 <script>
    let items = document.querySelectorAll('.carousel .carousel-item')
 
@@ -571,29 +595,30 @@
         }
     });
 
-    const marquees = [...document.querySelectorAll('.marquee')];
-    marquees.forEach((marquee) => {
-        marquee.innerHTML = marquee.innerHTML + '&nbsp;'.repeat(2);
-    marquee.i = 0;
-    marquee.step = 3;
-        marquee.width = (marquee.clientWidth + 1);
-    marquee.style.position = '';
-    marquee.innerHTML = `${marquee.innerHTML}`.repeat(1);
-    marquee.addEventListener('mouseenter', () => marquee.step = 0, false);
-    marquee.addEventListener('mouseleave', () => marquee.step = 3, false);
-    });
+    // const marquees = [...document.querySelectorAll('.marquee')];
+    // marquees.forEach((marquee) => {
+    //     marquee.innerHTML = marquee.innerHTML + '&nbsp;'.repeat(2);
+    // marquee.i = 0;
+    // marquee.step = 3;
+    //     marquee.width = (marquee.clientWidth + 1);
+    // marquee.style.position = '';
+    // marquee.innerHTML = `${marquee.innerHTML}`.repeat(1);
+    // marquee.addEventListener('mouseenter', () => marquee.step = 0, false);
+    // marquee.addEventListener('mouseleave', () => marquee.step = 3, false);
+    // });
 
-    setInterval(move,5);
+    // setInterval(move,5);
 
-    function move() {
-    marquees
-    .forEach((marquee) => {
-    marquee.style.marginLeft = `-${marquee.i}px`;;
-    marquee.i = marquee.i < marquee.width ? marquee.i + marquee.step : 1;
-    }); 
-    }
+    // function move() {
+    // marquees
+    // .forEach((marquee) => {
+    // marquee.style.marginLeft = `-${marquee.i}px`;;
+    // marquee.i = marquee.i < marquee.width ? marquee.i + marquee.step : 1;
+    // }); 
+    // }
 
 </script>
+
 
 </body>
 </html>
