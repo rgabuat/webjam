@@ -419,6 +419,12 @@ input, select {
         background-position:fixed;
     }
 
+    @media (max-width: 991px) {
+      .video-background
+    {
+        height: 80vh;
+    }
+  }
     
 
 /* custom color */
@@ -461,8 +467,8 @@ input, select {
 
 h1.test {
   position: absolute;
-  top: 100%;
   left: 50%;
+  top: -50%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
@@ -480,7 +486,7 @@ h1.test {
 
 @media (min-width: 991px) {
   h1.test{
-    top: 100%;
+    top: 170%;
     letter-spacing: 5px;
     font-size: 8em;
   }
