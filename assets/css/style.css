@@ -120,27 +120,6 @@ input, select {
     box-shadow: none !important;
 }
 
-.showcase
-{
-    right:0;
-    z-index:2;
-}
-
-.showcase video
-{
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.overlay
-{
-    top:0;
-    left: 0;
-    background-color: blueviolet;
-    mix-blend-mode: overlay;
-}
-
 .text h2
 {
     font-weight: 800;
@@ -153,14 +132,11 @@ input, select {
 }
 
 
-
-
-
-
     span.title {
         writing-mode: vertical-rl;
         font-weight: 900;
       }
+
 
 .card .card-img-top
 {
@@ -401,6 +377,7 @@ input, select {
     will-change: transform;
     z-index: -1000;
     }
+    
     video { 
     position: fixed;
     top: 50%;
