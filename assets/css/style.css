@@ -149,6 +149,7 @@ input, select {
   width: 120px !important;
   height: 120px !important;
   object-fit: cover;
+  margin:auto;
 }
 
 /* .marquee {
