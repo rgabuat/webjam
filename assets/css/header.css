@@ -146,6 +146,11 @@
     {
         writing-mode: unset !important;
     }
+
+    .tech-desc
+    {
+        font-size: 100% !important;
+    }
 }
 
 
