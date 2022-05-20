@@ -32,6 +32,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    background: #fff;
     /* background: #0a0a0a;
     background-position: fixed;
     background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url(https://media0.giphy.com/media/2shBNJSPTrpWvoXfpD/giphy.gif);
@@ -114,14 +115,6 @@ input, select {
 
 /* header section */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
-
-* {
-    /* font-family: 'Calistoga', cursive; */
-    font-family: 'Kumar One', cursive;
-   }
-   
 .navbar
 {
     box-shadow: none !important;
@@ -290,6 +283,11 @@ input, select {
     color:#036A43;
 }
 
+.text-orange
+{
+  color:#E88322;
+}
+
 .text-yellow
 {
     color:#FFCA27;
@@ -303,6 +301,11 @@ input, select {
 .bg-yellow
 {
     background:#FFCA27;
+}
+
+.bg-orange
+{
+  background:#E88322;
 }
  
 .skewed {
@@ -493,9 +496,8 @@ h1.test {
     letter-spacing: 5px;
     font-size: 8em;
   }
+  
 }
-
-
 
 
 
@@ -536,3 +538,10 @@ h1.test:hover {
   0 20px 30px rgba(0,0,0,0.5),
   20px 20px 20px rgba(0,0,0,0.5);
 }
+
+.progress
+{
+  border-radius: 25px;
+  height: 10px !important;
+}
+

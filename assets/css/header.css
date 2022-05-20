@@ -37,7 +37,7 @@
 .nav ul.menu li a{
     position: relative;
     display: inline-block;
-    color: #FFF;
+    color: #E88322;
     text-decoration: none;  text-transform: uppercase;
     padding: 10px 30px;
     box-sizing: border-box;
@@ -52,11 +52,99 @@
     line-height: 60px;
 }
 
+.tagl   
+{
+    line-height: 2;
+    letter-spacing: 3px;
+}
+
+.circle-icon {
+    background: #ffc0c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}
+.fa-solid {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+
+.custom-icon-wrapper {
+    display: inline-block;
+    margin: 2%;
+    background: #E88322;
+    border-radius: 50%;
+    padding: 50px;
+    width: 80px;
+    height: 80px;
+    font-size: 45px;
+    color: rgb(255,255,255);
+    position: relative;
+    transition: all 0.1s;
+  }
+  .custom-icon-wrapper:hover {
+    background: rgb(255, 202, 39);
+    cursor: pointer;
+  }
+  
+  .custom-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .custom-icon.fa-play {
+      transform: translate(-35%, -50%);
+  }
+
 /*********** Media Queries******************/
 @media screen and (max-width: 934px) { 
     .nav, .nav.active{
         height: auto;   
         padding: 10px 30px;
+    }
+    .about-desc 
+    {
+        width: 100% !important;
+    }
+
+    .skills
+    {
+        padding-bottom: 3rem;
+    }
+    .cont-card
+    {
+        width: 100% !important;
+    }
+
+    .cont-card span
+    {
+       font-size: 24px;
+    }
+
+    .anneyong
+    {
+        font-size: calc(1.575rem + 3.9vw) !important;
+    }
+
+    .span.title
+    {
+        writing-mode: unset !important;
     }
 }
 
