@@ -144,6 +144,13 @@ input, select {
     object-fit: contain !important;
 }
 
+.slide-partners img 
+{
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: cover;
+}
+
 /* .marquee {
     background: blue;
     overflow: hidden;
